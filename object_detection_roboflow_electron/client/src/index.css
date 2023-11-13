@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply text-yellow-500;
+}
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  height: .5rem;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(46,52,64,1);
+  background-clip: padding-box;
+  border-radius: 0.5rem;
+  border: 0.15rem solid transparent;
+}
+
+body{
+  background: linear-gradient(45deg, #0d9e19 0%, rgba(64, 177, 206, 0) 70%), linear-gradient(135deg, #50a6ec 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #ab4ab4 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #364a92 100%, rgba(51, 201, 49, 0) 70%);
+}
+*{
+  font-family: 'Questrial', sans-serif;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #print-area,
+  #print-area * {
+    visibility: visible;
+  }
+
+  #print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

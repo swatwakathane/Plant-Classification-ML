@@ -1,0 +1,8 @@
+path: C:\Users\ashut\OneDrive\Desktop\yolo\dataset
+
+train: train\images
+val: valid\images
+test: test\images
+
+nc: 6
+names: ['cabbage', 'chilli', 'cotton', 'lime', 'soyabean', 'tobacco']
